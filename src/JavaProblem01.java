@@ -20,7 +20,7 @@ public class JavaProblem01 {
 
         System.out.println("------------ stream 사용 X ------------------");
 
-        for (int i=0; i<fruitWords.size(); i++){
+        for (int i = 0; i < fruitWords.size(); i++) {
             System.out.println(fruitWords.toArray()[i]);
         }
 
@@ -30,7 +30,7 @@ public class JavaProblem01 {
 
         System.out.println("-------------- stream 사용 ------------------");
 
-        Set<String> streamFruit = words.stream().collect(Collectors.toSet());
+        Set<String> streamFruit = new HashSet<>(words);
         System.out.println(streamFruit);
     }
 
@@ -38,24 +38,24 @@ public class JavaProblem01 {
         Q. String a 를 int로 파싱 한뒤 a와 b를 더한 값을 println 으로 출력해주세요
         int b =  302;
     */
-    static void intParsing(){
+    static void intParsing() {
         String a = "123";
         int b = 302;
         int n = Integer.parseInt(a);
         System.out.println("-------------- 문자열 파싱 ------------------");
-        System.out.printf("%d 더하기 %d는 \n%d 입니다~!%n",b,n, b+n);
+        System.out.printf("%d 더하기 %d는 \n%d 입니다~!%n", b, n, b + n);
     }
     
     /*
     List<String> word = Arrays.asList(“apple”, “banana”, “tomato”);
     Q. for i 문 for Each 문을 사용해서 print 해보시오
     */
-    
-    static void stringFor(){
+
+    static void stringFor() {
         List<String> word = Arrays.asList("apple", "banana", "tomato");
 
         System.out.println("-------------- for문 ---------------------");
-        for (int i=0; i<word.size(); i++){
+        for (int i = 0; i < word.size(); i++) {
             System.out.println(word.get(i));
         }
         System.out.println("-------------- forEach ------------------");
