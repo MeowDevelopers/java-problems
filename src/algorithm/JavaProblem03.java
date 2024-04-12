@@ -1,3 +1,5 @@
+package algorithm;
+
 public class JavaProblem03 {
     public static int solution01(int number, int n, int m) {
         int answer = 0;
